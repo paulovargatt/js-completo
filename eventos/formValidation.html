@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Form</h1>
+
+    <form action="#">
+        <label for="txtUser"> Usuário</label>
+        <input type="text" id="txtUser" name="user"><br>
+        <label for="txtUser"> Senha</label>
+
+        <input type="text" id="txtPass" name="pass"><br>
+        <button type="submit" id="btn" class="btn btn-primary">Enviar</button>
+    </form>
+
+</div>
+
+<script>
+    var txtUser = document.getElementById('txtUser');
+    var txtPass = document.getElementById('txtPass');
+    var btn = document.getElementById('btn');
+    var form = document.querySelector('form');
+
+    form.addEventListener('submit', function (e) {
+        if(!txtUser.value || !txtPass.value){
+            alert('esta vaxio')
+            e.preventDefault();
+        }
+    })
+</script>
+</body>

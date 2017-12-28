@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Paragrafos</title>
+    <meta charset="utf-8">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Construtores</h1>
+</div>
+
+<script>
+
+
+
+    function Caneta(preco, cor) {
+        var color = cor || 'green' ;
+        this.preco = preco || 1;
+
+        this.mudaCor = function (cor) {
+            color = cor;
+        }
+
+        this.pegaCor = function(){
+            return color;
+        }
+    }
+
+    var caneta1 = new Caneta();
+
+</script>
+</body>

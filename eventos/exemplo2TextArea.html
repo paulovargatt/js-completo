@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Text Area</h1>
+        <div class="center-block text-center">
+           <textarea class="center-block" id="msg" cols="50" rows="10" maxlength="150"></textarea>
+           <div id="restaContainer" style="display: none;">Restam: <span id="resta" ></span> Caracteres</div>
+        </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var $msg = document.getElementById('msg');
+        var $restaContainer = document.getElementById('restaContainer');
+        var $resta = document.getElementById('resta');
+        var maxima = $msg.maxLength;
+
+        function mostrarContainer() {
+            $restaContainer.style.display = 'inline';
+        }
+
+        mostrarContainer();
+        showCaracteres(maxima);
+        $msg.addEventListener('input', checkLength);
+
+        function checkLength(e) {
+            var numeroLetras = this.value.length;
+            var caracteresRestantes = parseInt(maxima) - parseInt(numeroLetras);
+            showCaracteres(caracteresRestantes);
+        }
+
+        function showCaracteres(n) {
+            $resta.textContent = n;
+        }
+
+
+    })()
+</script>
+</body>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Eventos</h1>
+    <button id="btn1" class="btn btn-success" onclick="clicar()">BOTÃO 1</button>
+    <button id="btn2" class="btn btn-primary">BOTÃO 2</button>
+    <button id="btn3" class="btn btn-danger">BOTÃO 3</button>
+</div>
+
+<div class="container">
+    <h1>Propagação de Eventos</h1>
+    <div id="d1" style="background: darkred;padding: 25px">
+        texto dentro da DIV
+        <span style="background: #FFF">Texto SPAN</span>
+    </div>
+</div>
+
+<script>
+    var btn3 = document.getElementById('btn3');
+
+    btn3.addEventListener("click", function () {
+         alert('Clicou lvl2')
+    })
+
+    var $d1 = document.querySelector("#d1");
+    var d1span = document.querySelector("#d1 span");
+
+    d1span.addEventListener('click', function () {
+        console.log('click no $d1span')
+    })
+
+    $d1.addEventListener('click', function (evt) {
+        console.log('click no $d1');
+        console.log(evt.currentTarget);
+        console.log(evt.target);
+        console.log(this)
+    });
+
+
+</script>
+</body>

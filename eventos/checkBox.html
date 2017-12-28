@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>CheckBox</h1>
+        <div class="center-block text-center">
+            <form action="#">
+                <textarea class="center-block" id="txt" cols="50" rows="10">
+                </textarea><br>
+                <label>
+                    <input type="checkbox" id="chk">Li e aceito
+                </label>
+                <input type="submit" id="btn" value="Continuar" class="btn btn-success">
+            </form>
+        </div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+        var txt = document.getElementById('txt');
+        txt.value = 'Contrato e texto de exemplo ' + 'Contrato e texto de exemplo Contrato e texto de exemplo Contrato e texto de exemplo ';
+
+        var btn = document.getElementById('btn');
+        var chk = document.getElementById('chk');
+       toggleBtn();
+
+        chk.addEventListener('change', function () {
+           toggleBtn()
+        });
+
+        function toggleBtn() {
+            return  btn.disabled = !chk.checked;
+        }
+
+
+
+
+    })()
+</script>
+</body>

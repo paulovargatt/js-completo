@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Paragrafos</title>
+    <meta charset="utf-8">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>paragrafos</h1>
+    <p>Texto 1 e tal</p>
+    <p>Texto 2 e tal</p>
+    <p>Texto 3 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+    <p>Texto 4 e tal</p>
+</div>
+
+<script>
+    var paragrafo = document.getElementsByTagName('p');
+
+    var x = 0;
+    while (paragrafo[x]){
+        paragrafo[x].textContent = 'Esse Site fOI hACKEADO'
+        console.log(paragrafo);
+        x++
+    }
+</script>
+</body>
