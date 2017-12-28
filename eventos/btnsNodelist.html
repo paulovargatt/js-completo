@@ -13,38 +13,28 @@
 <body>
 <div class="container">
     <h1>Nodelist</h1>
-        <div class="center-block text-center">
-            <form action="#">
-                <textarea class="center-block" id="txt" cols="50" rows="10">
-                </textarea><br>
-                <label>
-                    <input type="checkbox" id="chk">Li e aceito
-                </label>
-                <input type="submit" id="btn" value="Continuar" class="btn btn-success">
-            </form>
-        </div>
+
+     <button class="btn btn-default">Botao 1</button>
+     <button class="btn btn-default">Botao 2</button>
+     <button class="btn btn-default">Botao 4</button>
+     <button class="btn btn-default">Botao 5</button>
+     <button class="btn btn-default">Botao 6</button>
+     <button class="btn btn-default">Botao 7</button>
+     <button class="btn btn-default">Botao 8</button>
 </div>
 
 <script>
     (function () {
-        'use strict';
-        var txt = document.getElementById('txt');
-        txt.value = 'Contrato e texto de exemplo ' + 'Contrato e texto de exemplo Contrato e texto de exemplo Contrato e texto de exemplo ';
 
-        var btn = document.getElementById('btn');
-        var chk = document.getElementById('chk');
-       toggleBtn();
+        var btns = document.getElementsByTagName('button');
 
-        chk.addEventListener('change', function () {
-           toggleBtn()
-        });
-
-        function toggleBtn() {
-            return  btn.disabled = !chk.checked;
+        for (var i = 0; i< btns.length; i++){
+            btns[i].addEventListener('click', clicou);
         }
 
-
-
+        function clicou() {
+            console.log('clicou' + this.textContent)
+        }
 
     })()
 </script>

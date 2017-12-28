@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Tarefas</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <input class="form-control" id="txtTask">
+            <button class="btn btn-block btn-success btn-sm" id="btn" type="submit" value="New">New</button>
+        </div>
+    </div>
+    <ul>
+        <li>Teste 1</li>
+        <li>Teste 2</li>
+        <li>Teste 3</li>
+    </ul>
+
+</div>
+
+<script>
+    (function () {
+        'use strict';
+
+        var ul = document.querySelector('ul');
+        var txtTask = document.querySelector('#txtTask');
+        var btn = document.querySelector('#btn');
+
+        btn.addEventListener('click', function () {
+            var task = '<li>' + txtTask.value + '</li>';
+            console.log(task);
+            ul.innerHTML +=  task;
+            txtTask.value = '';
+            txtTask.focus()
+        })
+
+
+    })()
+</script>
+</body>
