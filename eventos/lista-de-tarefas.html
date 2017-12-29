@@ -9,16 +9,28 @@
 
     <script src="../beluga.js"></script>
 
+    <style>
+    .done{
+        text-decoration: line-through;
+        color: #555;
+    }
+
+        ul li {
+            cursor: pointer;
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
     <h1>Lista de Tarefas</h1>
     <div class="row">
         <div class="col-md-3">
-            <input class="form-control" id="txtTask">
+            <input class="form-control" id="txtTask" style="margin: 10px 0px">
             <button class="btn btn-block btn-success btn-sm" id="btn" type="submit" value="New">New</button>
         </div>
     </div>
+    <br>
     <ul>
         <li>Teste 1</li>
         <li>Teste 2</li>
@@ -34,14 +46,37 @@
         var ul = document.querySelector('ul');
         var txtTask = document.querySelector('#txtTask');
         var btn = document.querySelector('#btn');
+        var lis = ul.querySelectorAll('li');
 
-        btn.addEventListener('click', function () {
-            var task = '<li>' + txtTask.value + '</li>';
-            console.log(task);
-            ul.innerHTML +=  task;
-            txtTask.value = '';
-            txtTask.focus()
-        })
+        btn.addEventListener('click', addTask);
+        txtTask.addEventListener('keyup', function (e) {
+           if (e.keyCode === 13){
+               addTask();
+           }
+        });
+
+        ul.addEventListener('click', function (e) {
+            if(e.target.nodeName === 'LI'){
+                removeTask(e.target);
+            }
+        });
+
+        function removeTask(li) {
+            if(confirm('deseja excluir a tarefa ? \n ' + li.textContent )){
+                li.parentNode.removeChild(li);
+            }
+        }
+
+            function addTask() {
+                var task = '<li>' + txtTask.value + '</li>';
+                var li = document.createElement('li');
+                var text = document.createTextNode(txtTask.value);
+                li.appendChild(text);
+                ul.appendChild(li);
+                txtTask.value = '';
+                txtTask.focus();
+            }
+
 
 
     })()
