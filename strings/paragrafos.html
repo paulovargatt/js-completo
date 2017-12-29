@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Paragrafos</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui eros, lacinia vitae luctus eget,
+        condimentum eget lacus. Praesent a tortor quam.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui eros, lacinia vitae luctus eget,
+        condimentum eget lacus. Praesent a tortor quam. Vestibulum cursus leo massa, at luctus enim tincidunt
+        non.condimentum eget lacus. Praesent a tortor quam. Vestibulum cursus leo massa, at luctus enim tincidunt
+        non.
+    </p>
+</div>
+
+<script>
+    (function () {
+        window.addEventListener('load', init);
+
+        function init() {
+            var paragrados = document.querySelectorAll('p');
+            var x = 0;
+            while (paragrados[x]){
+                paragrados[x].innerHTML = formatarTexto(paragrados[x].innerHTML);
+                x++;
+            }
+
+            function formatarTexto(texto) {
+                var maximoCaracteres = 200;
+                if(texto.length <= maximoCaracteres) {
+                    return texto
+                }
+
+                var subTexto = texto.slice(0,maximoCaracteres);
+                return subTexto + '...';
+            }
+        }
+
+    })()
+</script>
+</body>

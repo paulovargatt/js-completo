@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>Arrays</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <h1>Arrays</h1>
+</div>
+
+<script>
+         var arr = [1,2,3,4,5,'vargatt'];
+
+       var soNumber = arr.every(function (el) {
+            return  typeof el === 'number';
+        });
+
+       var numeros = arr.filter(function (el,i, arr) {
+           return typeof el === 'number';
+       });
+       console.log(numeros);
+
+       arr.forEach(function (el,i,arr) {
+           console.log('el', el, 'i', i, 'arr', arr, arr.toString());
+       });
+
+       var posicao = str = arr.indexOf('vargatt',0);
+       console.log('posicao vargatt', posicao);
+
+       var posicaostr2 = str = arr.lastIndexOf(4);
+       console.log('posicao 4', posicaostr2);
+
+       numeros = numeros.map(function (el, i, arr) {
+           return el * i;
+       });
+        console.log(numeros);
+
+        var arr2 = arr.concat(numeros);
+        console.log(arr2);
+
+        var str = arr2.join(' -- ');
+        console.log(str);
+
+        arr.push('novo Item');
+        console.log(arr);
+
+        var ultimo = arr.pop();
+        console.log(ultimo);
+        console.log(arr);
+
+        var primeiro = arr.shift();
+        console.log(primeiro);
+        console.log(arr);
+
+        arr.unshift(true,false, 'unshift');
+        console.log(arr);
+
+        numeros.shift(); //retira o primeiro item arr
+        var somaArr = numeros.reduce(function (anterior, atual) {
+            console.log('anterior', anterior, '| Atual ', atual)
+            return anterior + atual
+        });
+        console.log(numeros);
+        console.log(somaArr);
+
+        var TesteReduce = ['1','2','3','4'].reduceRight(function (i, a) {
+            return i + a;
+        });
+        console.log(TesteReduce);
+
+        console.log([10,20,30].reverse());
+
+        console.log(arr.slice(2,5));
+
+        arr2.splice(2,0,'limao','melao');
+        console.log(arr2);
+
+
+</script>
+</body>
