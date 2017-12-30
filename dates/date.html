@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Curso Javascript Completo 2018</title>
+    <meta charset="utf-8">
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="../beluga.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>DATES</h1>
+</div>
+
+
+<section>
+    <div class="container">
+
+    </div>
+</section>
+
+<script>
+    (function () {
+        var dataAtual = new Date();
+        dataAtual.setHours(0);
+        dataAtual.setMinutes(0);
+        dataAtual.setSeconds(0);
+        dataAtual.setMilliseconds(0);
+        var anoAtual = dataAtual.getFullYear();
+
+        var dataAniver = new Date(anoAtual,11,16);
+
+        var dataAtualTS = dataAtual.getTime();
+        var dataNiverTS = dataAniver.getTime();
+
+        if(dataNiverTS === dataAtualTS){
+            alert('Parabens pelo seu ANIVER');
+            return ;
+        }
+
+        if(dataNiverTS < dataAtualTS){
+            dataAniver.setFullYear(++anoAtual);
+            dataNiverTS = dataAniver.getTime();
+        }
+
+        const UM_DIA = 24 * 60 * 60 * 1000;
+        var diff = dataNiverTS - dataAtualTS;
+
+        console.log(diff / UM_DIA)
+
+    })()
+
+</script>
+
+</body>
+</html>
