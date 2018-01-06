@@ -5,7 +5,7 @@ function getInteiro(min, max){
 
 let opcao = 5000
 
-while (opcao != -10) {
-    opcao = getInteiro(-1, 1000000000)
+do{
+    opcao = getInteiro(-1, 5)
     console.log('opcao' + opcao)
-}
+} while (opcao != -10)
