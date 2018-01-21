@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe4de03-6e5e-4317-80ee-d47d85995248" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/eventosBOM/EVENTOS.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/temporizadores/cronometro.html" afterPath="$PROJECT_DIR$/temporizadores/cronometro.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,11 +57,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cronometro.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cronometro.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temporizadores/cronometro.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="71" column="49" lean-forward="true" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+            <state relative-caret-position="293">
+              <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EVENTOS.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eventosBOM/EVENTOS.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1170">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="desafio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eventosBOM/desafio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -111,6 +131,7 @@
         <option value="$PROJECT_DIR$/temporizadores/pop-up.html" />
         <option value="$PROJECT_DIR$/temporizadores/relogio.html" />
         <option value="$PROJECT_DIR$/temporizadores/cronometro.html" />
+        <option value="$PROJECT_DIR$/eventosBOM/desafio.html" />
       </list>
     </option>
   </component>
@@ -121,8 +142,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="-8" />
+    <option name="x" value="1404" />
+    <option name="y" value="91" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -153,6 +174,11 @@
             <path>
               <item name="js-completo" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-completo" type="462c0819:PsiDirectoryNode" />
+              <item name="eventosBOM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-completo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-completo" type="462c0819:PsiDirectoryNode" />
               <item name="temporizadores" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -169,16 +195,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\js-completo\Math" />
-      <recent name="C:\xampp\htdocs\js-completo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\js-completo\eventosBOM" />
       <recent name="C:\xampp\htdocs\js-completo\temporizadores" />
       <recent name="C:\xampp\htdocs\js-completo\dates" />
       <recent name="C:\xampp\htdocs\js-completo\Arrays" />
       <recent name="C:\xampp\htdocs\js-completo\Math" />
-      <recent name="C:\xampp\htdocs\js-completo\strings" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\js-completo\eventosBOM" />
+      <recent name="C:\xampp\htdocs\js-completo\Math" />
+      <recent name="C:\xampp\htdocs\js-completo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -228,15 +255,15 @@
       <workItem from="1515977600740" duration="2677000" />
       <workItem from="1516239808321" duration="613000" />
       <workItem from="1516241985890" duration="3567000" />
-      <workItem from="1516555988408" duration="2815000" />
+      <workItem from="1516555988408" duration="4629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51929000" />
+    <option name="totallyTimeSpent" value="53743000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19866072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -246,7 +273,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20236088" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2158516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6070826" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -269,21 +296,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beluga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Arrays/exeAlunoReprovado.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beluga.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -622,8 +634,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temporizadores/cronometro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="71" column="49" lean-forward="true" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+        <state relative-caret-position="293">
+          <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventosBOM/EVENTOS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventosBOM/desafio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding />
         </state>
       </provider>
