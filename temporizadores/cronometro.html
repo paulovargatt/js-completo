@@ -27,31 +27,64 @@
                 $iniciar.addEventListener('click', iniciar);
                 $pausar.addEventListener('click', pausar);
                 $parar.addEventListener('click', parar);
-
+                var intervalo = null;
                 var timestamp = 0;
-                function iniciar() {
-                    timestamp = Date.now();
-                    iniciarCronometro();
-                }
+                var msClickPausa = 0;
+                var msTempoDecorrido = 0;
+                var rodando = false;
 
                 function iniciar() {
+                    if(rodando) return;
                     timestamp = Date.now();
                     iniciarCronometro();
+                    rodando = true;
                 }
-                function iniciarCronometro() {
-                    setInterval(function () {
+                function iniciarCronometro(tempoDecorrido) {
+                    var ms = tempoDecorrido || 0;
+                   intervalo = setInterval(function () {
                         var timeagora = Date.now();
                         var dif = timeagora - timestamp;
-                        $cronometro.value = dif;
+                        $cronometro.value = formataMs(dif + ms);
                     },100)
 
                 }
 
-                function pausar() {
+                const MINUTO  = 60 * 1000;
 
+                function formataMs(ms) {
+                    if(ms < 1000){
+                        return ms;
+                    }else if(ms < MINUTO){
+                        var segundos = ms/1000;
+                        segundos = parseInt(segundos);
+                        var centesimo = ms - (segundos * 1000);
+                        return segundos + ':' + centesimo;
+                    }else {
+                        var m = ms / (MINUTO)
+                        m = parseInt(m);
+                        return m + ":" + formataMs(ms - m * MINUTO) //Function recursiva
+                    }
+                }
+
+                function pausar() {
+                    if(!$cronometro.value) return;
+                    if(rodando){
+                        clearInterval(intervalo);
+                        msClickPausa = Date.now();
+                        msTempoDecorrido += (msClickPausa - timestamp);
+                    }else {
+                        timestamp = Date.now();
+                        iniciarCronometro(msTempoDecorrido);
+                    }
+                    rodando = !rodando;
                 }
                 function parar() {
-
+                    msClickPausa = 0;
+                    timestamp = 0;
+                    msTempoDecorrido = 0;
+                    rodando = false;
+                    $cronometro.value = '';
+                    clearInterval(intervalo);
                 }
             })()
             
