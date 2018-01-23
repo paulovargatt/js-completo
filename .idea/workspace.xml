@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe4de03-6e5e-4317-80ee-d47d85995248" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/eventosBOM/EVENTOS.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/styles/estilosPageDesafio.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +40,18 @@
       <file leaf-file-name="pop-up.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temporizadores/pop-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="-26">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estilosPageDesafio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/estilosPageDesafio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="151" column="30" lean-forward="false" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -50,38 +60,8 @@
       <file leaf-file-name="relogio.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temporizadores/relogio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
+            <state relative-caret-position="475">
               <caret line="23" column="47" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="23" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cronometro.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temporizadores/cronometro.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EVENTOS.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventosBOM/EVENTOS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1170">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="desafio.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eventosBOM/desafio.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -132,6 +112,7 @@
         <option value="$PROJECT_DIR$/temporizadores/relogio.html" />
         <option value="$PROJECT_DIR$/temporizadores/cronometro.html" />
         <option value="$PROJECT_DIR$/eventosBOM/desafio.html" />
+        <option value="$PROJECT_DIR$/styles/estilosPageDesafio.html" />
       </list>
     </option>
   </component>
@@ -164,6 +145,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,18 +156,12 @@
             <path>
               <item name="js-completo" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-completo" type="462c0819:PsiDirectoryNode" />
-              <item name="eventosBOM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="js-completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js-completo" type="462c0819:PsiDirectoryNode" />
-              <item name="temporizadores" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,17 +171,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\js-completo\eventosBOM" />
-      <recent name="C:\xampp\htdocs\js-completo\temporizadores" />
-      <recent name="C:\xampp\htdocs\js-completo\dates" />
-      <recent name="C:\xampp\htdocs\js-completo\Arrays" />
-      <recent name="C:\xampp\htdocs\js-completo\Math" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\js-completo\eventosBOM" />
       <recent name="C:\xampp\htdocs\js-completo\Math" />
       <recent name="C:\xampp\htdocs\js-completo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\js-completo\styles" />
+      <recent name="C:\xampp\htdocs\js-completo\eventosBOM" />
+      <recent name="C:\xampp\htdocs\js-completo\temporizadores" />
+      <recent name="C:\xampp\htdocs\js-completo\dates" />
+      <recent name="C:\xampp\htdocs\js-completo\Arrays" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,12 +231,14 @@
       <workItem from="1515977600740" duration="2677000" />
       <workItem from="1516239808321" duration="613000" />
       <workItem from="1516241985890" duration="3567000" />
-      <workItem from="1516555988408" duration="4629000" />
+      <workItem from="1516555988408" duration="5085000" />
+      <workItem from="1516564769712" duration="136000" />
+      <workItem from="1516674588547" duration="1746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53743000" />
+    <option name="totallyTimeSpent" value="56081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
@@ -296,14 +274,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beluga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Arrays/exeAlunoReprovado.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -616,42 +586,50 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temporizadores/popup.html" />
-    <entry file="file://$PROJECT_DIR$/temporizadores/pop-up.html">
+    <entry file="file://$PROJECT_DIR$/eventosBOM/desafio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temporizadores/relogio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="23" column="47" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temporizadores/cronometro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="88" column="16" lean-forward="true" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="115">
+          <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eventosBOM/EVENTOS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eventosBOM/desafio.html">
+    <entry file="file://$PROJECT_DIR$/temporizadores/cronometro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+        <state relative-caret-position="475">
+          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temporizadores/relogio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temporizadores/pop-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/estilosPageDesafio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="151" column="30" lean-forward="false" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
           <folding />
         </state>
       </provider>
