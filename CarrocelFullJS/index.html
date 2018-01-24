@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript Completo</title>
+        <meta charset="utf-8">
+        
+        <link href="carousel.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <main class="content">
+
+            <h1>Javascript Completo</h1>
+
+            <section class="carousel">
+              <div class="carousel__inner">
+                <div class="carousel__item"> <a href=""><img src="images/01.jpg" alt=""></a></div>
+                <div class="carousel__item"> <a href=""><img src="images/02.jpg" alt=""></a></div>
+                <div class="carousel__item"> <a href=""><img src="images/03.jpg" alt=""></a></div>
+                <div class="carousel__item"> <a href=""><img src="images/04.jpg" alt=""></a></div>
+              </div>
+              
+              <button class="carousel__btn carousel__btn--prev"> &lt; </button>
+              <button class="carousel__btn carousel__btn--next"> &gt; </button>
+              
+              <ul class="carousel__paginacao"></ul>
+            </section>
+
+        </main>
+        
+        <script>
+        
+            (function(){                
+                'use strict';
+                //Mostra botoes e acrescenta listerners
+                // Inclui overflow hidden caroucel
+                var btnPrev = document.querySelector('.carousel__btn--prev');
+                var btnNext = document.querySelector('.carousel__btn--next');
+                var caroucel = document.querySelector('.carousel');
+                var caroucelInner = document.querySelector('.carousel__inner');
+                var caroucelItens = document.querySelectorAll('.carousel__item');
+                var caroucelPaginacao = document.querySelector('.carousel__paginacao');
+                var bannerAtual = 0;
+                var qtdBanners = caroucelItens.length;
+
+                btnPrev.style.display = 'block';
+                btnNext.style.display = 'block';
+                caroucel.style.overflow = 'hidden';
+
+                btnPrev.addEventListener('click', showPrev);
+                btnNext.addEventListener('click', showNext);
+                montaPaginacao();
+
+                function montaPaginacao() {
+                    for (var i = 0; i < qtdBanners; i++){
+                        adicionaLi(i);
+                    }
+                }
+
+                function atualizaPaginacao() {
+                    caroucelPaginacao.querySelector('li.atual').removeAttribute('class');
+                    caroucelPaginacao.querySelectorAll('li')[bannerAtual].className = 'atual';
+                }
+
+                function adicionaLi(i) {
+                    var li = document.createElement('li');
+
+                    if(i === 0) li.className = 'atual';
+
+                    li.addEventListener('click', function () {
+                        bannerAtual = i;
+                       mostraBanner(bannerAtual);
+                    });
+                    caroucelPaginacao.appendChild(li);
+                }
+
+                function showPrev() {
+                    bannerAtual--;
+                    mostraBanner(bannerAtual);
+                }
+                
+                function showNext() {
+                    bannerAtual++;
+                    mostraBanner(bannerAtual);
+                }
+
+                function setupNav() {
+                    btnPrev.disabled = !bannerAtual > 0;
+                    btnNext.disabled = bannerAtual === qtdBanners -1;
+                }
+               //IGual function setupNav
+                // if (bannerAtual > 0){
+                //     btnPrev.disabled = false;
+                // }else{
+                //     btnPrev.disabled = true;
+                // }
+                // if (bannerAtual === qtdBanners - 1){
+                //     btnNext.disabled = true;
+                // }else{
+                //     btnNext.disabled = false;
+                // }
+
+                function mostraBanner(bannerAtual) {
+                    limpaIntervalo();
+                    setupNav(bannerAtual);
+                    var largura = getComputedStyle(caroucelItens[0]).width; //Pega largura
+                    largura = parseInt(largura);
+                    var novaPosicao = largura * bannerAtual * -1;
+                    caroucelInner.style.transform = 'translateX('+ novaPosicao + 'px)';
+                    atualizaPaginacao();
+                    iniciaIntervalo();
+                }
+
+                var intervalo = null;
+                function iniciaIntervalo() {
+                    intervalo = setInterval(function () {
+                        bannerAtual ++;
+                        if(bannerAtual >= qtdBanners){
+                            bannerAtual = 0;
+                        }
+                        mostraBanner(bannerAtual);
+                    },2000)
+                }
+                iniciaIntervalo();
+
+                function limpaIntervalo() {
+                    clearInterval(intervalo);
+                }
+
+
+
+            })()
+        
+        </script>
+        
+    </body>
+</html>
